@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>IsoRim Waylith - Custom Quest Framework Pack</name>
+  <author>Lin</author>
+  <packageId>Peren.IsoRimWaylith.CQFPack</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Peren.IsoRimProjectZ</packageId>
+      <displayName>IsoRimZ</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3824503834</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>HaiLuan.CustomQuestFramework</packageId>
+      <displayName>Custom Quest Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2978572782</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Peren.IsoRimProjectZ</li>
+    <li>HaiLuan.CustomQuestFramework</li>
+  </loadAfter>
+  <description>Custom Quest Framework maps with IsoRimZ floors.
+
+- A CQF map saved on a map with floors keeps them: walls, floors, roofs, stairs and everything upstairs
+- Its quest site comes out as it was made, in any game, whatever that game's floor count
+- Colonists walk in by the enter spot and up the stairs; enemies upstairs come down
+- Reopening a saved map in the CQF editor keeps its floors
+- Maps saved without floors behave as they do without this pack
+
+A map with floors can only be a quest site or a main map. As a pocket map, map part, settlement, outpost or scenario start it is refused with a short warning.
+
+Needs IsoRimZ and Custom Quest Framework.
+
+让 Custom Quest Framework 的地图用上 IsoRimZ 的楼层。
+
+- 在有楼层的地图上保存的 CQF 地图会保留楼层：墙、楼板、屋顶、楼梯和楼上的一切
+- 任务地点按原样生成，不受当前存档楼层数影响
+- 小人从进入点进来、走楼梯上楼，楼上的敌人也会下楼
+- 在 CQF 编辑器里重新打开已保存的地图，楼层不丢
+- 没有楼层的地图和不装本包时完全一样
+
+有楼层的地图只能用作任务地点或主地图。用作子地图、地图片段、据点、前哨或开局地图时会被拒绝，并给出简短警告。
+
+需要 IsoRimZ 和 Custom Quest Framework。</description>
+</ModMetaData>

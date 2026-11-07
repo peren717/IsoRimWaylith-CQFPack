@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <IsoRimCQF_NoPocket>This map has floors: it can't be a pocket map.</IsoRimCQF_NoPocket>
+  <IsoRimCQF_PartAcrossFloors>A part can't span floors: nothing saved.</IsoRimCQF_PartAcrossFloors>
+  <IsoRimCQF_PartLosesFloors>A part keeps no floors.</IsoRimCQF_PartLosesFloors>
+  <IsoRimCQF_TallSource>Tall mountains are saved as plain rock.</IsoRimCQF_TallSource>
+</LanguageData>

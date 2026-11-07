@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <IsoRimCQF_NoPocket>这张地图有楼层，不能用作子地图。</IsoRimCQF_NoPocket>
+  <IsoRimCQF_PartAcrossFloors>地图片段不能跨楼层，未保存。</IsoRimCQF_PartAcrossFloors>
+  <IsoRimCQF_PartLosesFloors>地图片段不保留楼层。</IsoRimCQF_PartLosesFloors>
+  <IsoRimCQF_TallSource>高山会存成普通岩石。</IsoRimCQF_TallSource>
+</LanguageData>

@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- IsoRimProjectZ.dll is IsoRimZ's (public Api, Api 9+); override with -p:IsoRimZDll=<path> to build against a worktree.
+       QuestEditor_Library.dll is Custom Quest Framework's, referenced in place and never copied. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>IsoRimWaylith_CQFPack</AssemblyName>
+    <RootNamespace>IsoRimCQFPack</RootNamespace>
+    <OutputPath>..\1.7\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <Optimize>true</Optimize>
+    <RimDir Condition="'$(RimDir)' == ''">..\..\..</RimDir>
+    <IsoRimZDll Condition="'$(IsoRimZDll)' == ''">..\..\IsoRimProjectZ\1.7\Assemblies\IsoRimProjectZ.dll</IsoRimZDll>
+    <IsoRimDll Condition="'$(IsoRimDll)' == ''">..\..\IsoRim17\1.7\Assemblies\IsoRim.dll</IsoRimDll>
+    <WS>$(RimDir)\..\..\workshop\content\294100</WS>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="obj\**;bin\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(RimDir)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(RimDir)\UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Waylith"><HintPath>$(RimDir)\Waylith.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(WS)\2009463077\1.7\Assemblies\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="QuestEditor_Library"><HintPath>$(WS)\2978572782\1.7\Assemblies\net10.0\QuestEditor_Library.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="IsoRimProjectZ"><HintPath>$(IsoRimZDll)</HintPath><Private>false</Private></Reference>
+    <Reference Include="IsoRim"><HintPath>$(IsoRimDll)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
