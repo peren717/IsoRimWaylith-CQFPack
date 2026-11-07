@@ -14,9 +14,8 @@ namespace IsoRimCQFPack
     // map stays as it was made.
     internal static class Planner
     {
-        private static readonly Func<MapParent, MapFloorPlan?> Plan = PlanFor;
-
-        internal static void Register() => Api.RegisterMapFloorPlanner(Plan);
+        // (no static field of the delegate: the game reads every static field's type at startup, and MapFloorPlan is missing on an older IsoRimZ)
+        internal static void Register() => Api.RegisterMapFloorPlanner(PlanFor);
 
         private static MapFloorPlan? PlanFor(MapParent parent)
         {
