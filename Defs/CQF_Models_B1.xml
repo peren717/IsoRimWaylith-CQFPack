@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IsoRim Waylith - Custom Quest Framework Pack, batch B1: models made after CQF's art. These defs bind nothing by themselves (no thingDef):
+     Patches/IsoRimGate_B1.xml binds them on IsoRim Api 50+, so an older IsoRim still loads the pack and CQF keeps its sprites. -->
+<Defs>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_TreasureChest</defName>
+    <model>Models/cqf_chest.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Cabinet</defName>
+    <model>Models/cqf_cabinet.obj</model>
+    <builtFor>(2, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Crate</defName>
+    <model>Models/cqf_crate_a.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_SomeCrate</defName>
+    <model>Models/cqf_crates_a.obj</model>
+    <builtFor>(2, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_APileOfCrate</defName>
+    <model>Models/cqf_crate_pile.obj</model>
+    <builtFor>(4, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Bookshelf</defName>
+    <model>Models/cqf_bookshelf.obj</model>
+    <builtFor>(2, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_EmptyBookshelf</defName>
+    <model>Models/cqf_bookshelf_empty.obj</model>
+    <builtFor>(2, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsExit</defName>
+    <model>Models/cqf_stairs_up.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsUpEntrance</defName>
+    <model>Models/cqf_stairs_up.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsExit3</defName>
+    <model>Models/cqf_stairs_up.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsUpEntrance3</defName>
+    <model>Models/cqf_stairs_up.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsEntrance</defName>
+    <model>Models/cqf_stairs_down.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsDownExit</defName>
+    <model>Models/cqf_stairs_down.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsEntrance3</defName>
+    <model>Models/cqf_stairs_down.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_StairsDownExit3</defName>
+    <model>Models/cqf_stairs_down.obj</model>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Ladder</defName>
+    <model>Models/cqf_ladder.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_LadderEntrance</defName>
+    <model>Models/cqf_ladder.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_CellarDoor</defName>
+    <model>Models/cqf_cellar.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Sarcophagus</defName>
+    <model>Models/cqf_sarcophagus.obj</model>
+    <builtFor>(1, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Cage</defName>
+    <model>Models/cqf_cage_open.obj</model>
+    <outline>0.4</outline>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_LargeCage</defName>
+    <model>Models/cqf_cage_large_open.obj</model>
+    <outline>0.4</outline>
+    <builtFor>(2, 2)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Sign</defName>
+    <model>Models/cqf_sign.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_DamagedSign</defName>
+    <model>Models/cqf_sign_damaged.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Tunnel</defName>
+    <model>Models/cqf_tunnel.obj</model>
+    <builtFor>(1, 1)</builtFor>
+    <surfaceHeight>0.00</surfaceHeight>
+  </IsoRim.ModelDef>
+  <IsoRim.ModelDef>
+    <defName>R3D_CQF_Casket</defName>
+    <model>Models/cqf_casket.obj</model>
+    <builtFor>(1, 2)</builtFor>
+    <surfaceHeight>0.40</surfaceHeight>
+  </IsoRim.ModelDef>
+</Defs>

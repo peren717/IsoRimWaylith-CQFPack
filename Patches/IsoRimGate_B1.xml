@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IsoRim Waylith - Custom Quest Framework Pack, batch B1 gate: binds the models on IsoRim Api 50+ (byGraphic with Graphic_Random variants).
+     Every field newer than a plain model is added here, so an older IsoRim never reads it. -->
+<Patch>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_TreasureChest"]</xpath>
+      <value>
+        <thingDef>QE_TreasureChest</thingDef>
+        <byGraphic><li><path>Things/Building/LootBox/TreasureChest/TreasureChest_opened</path><model>Models/cqf_chest_open.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Cabinet"]</xpath>
+      <value>
+        <thingDef>QE_Cabinet</thingDef>
+        <rotationByFacing><li>0</li><li>0</li><li>180</li><li>0</li></rotationByFacing>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Crate"]</xpath>
+      <value>
+        <thingDef>QE_Crate</thingDef>
+        <byGraphic><li><path>Things/Building/LootBox/Crate/Crate/Crate_a</path><model>Models/cqf_crate_a.obj</model></li><li><path>Things/Building/LootBox/Crate/Crate/Crate_b</path><model>Models/cqf_crate_b.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_SomeCrate"]</xpath>
+      <value>
+        <thingDef>QE_SomeCrate</thingDef>
+        <byGraphic><li><path>Things/Building/LootBox/Crate/Crates/Crates_a</path><model>Models/cqf_crates_a.obj</model></li><li><path>Things/Building/LootBox/Crate/Crates/Crates_b</path><model>Models/cqf_crates_b.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_APileOfCrate"]</xpath>
+      <value>
+        <thingDef>QE_APileOfCrate</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Bookshelf"]</xpath>
+      <value>
+        <thingDef>QE_Bookshelf</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_EmptyBookshelf"]</xpath>
+      <value>
+        <thingDef>QE_EmplyBookshelf</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsExit"]</xpath>
+      <value>
+        <thingDef>CQF_StairsExit</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsUpEntrance"]</xpath>
+      <value>
+        <thingDef>CQF_StairsUpEntrance</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsExit3"]</xpath>
+      <value>
+        <thingDef>CQF_StairsExitThreeByThree</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsUpEntrance3"]</xpath>
+      <value>
+        <thingDef>CQF_StairsUpEntranceThreeByThree</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsEntrance"]</xpath>
+      <value>
+        <thingDef>CQF_StairsEntrance</thingDef>
+        <groundShadow>false</groundShadow><sinkHole>1.0</sinkHole>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsDownExit"]</xpath>
+      <value>
+        <thingDef>CQF_StairsDownExit</thingDef>
+        <groundShadow>false</groundShadow><sinkHole>1.0</sinkHole>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsEntrance3"]</xpath>
+      <value>
+        <thingDef>CQF_StairsEntranceThreeByThree</thingDef>
+        <groundShadow>false</groundShadow><sinkHole>1.0</sinkHole>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_StairsDownExit3"]</xpath>
+      <value>
+        <thingDef>CQF_StairsDownExitThreeByThree</thingDef>
+        <groundShadow>false</groundShadow><sinkHole>1.0</sinkHole>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Ladder"]</xpath>
+      <value>
+        <thingDef>QE_Labber</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_LadderEntrance"]</xpath>
+      <value>
+        <thingDef>QE_LabberEntrance</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_CellarDoor"]</xpath>
+      <value>
+        <thingDef>QE_CellarDoor</thingDef>
+        <groundShadow>false</groundShadow><sinkHole>0.5</sinkHole><byGraphic><li><path>Things/Building/SubMap/CellarDoor/CellarDoor_Open</path><model>Models/cqf_cellar_open.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Sarcophagus"]</xpath>
+      <value>
+        <thingDef>QE_Sarcophagus</thingDef>
+        <byGraphic><li><path>Things/Building/LootBox/Sarcophagus/Sarcophagus_opened</path><model>Models/cqf_sarcophagus_open.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Cage"]</xpath>
+      <value>
+        <thingDef>QE_Cage</thingDef>
+        <byState><li><state>cqf_cage_full</state><model>Models/cqf_cage.obj</model></li></byState>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_LargeCage"]</xpath>
+      <value>
+        <thingDef>QE_LargeCage</thingDef>
+        <byState><li><state>cqf_cage_full</state><model>Models/cqf_cage_large.obj</model></li></byState>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Sign"]</xpath>
+      <value>
+        <thingDef>QE_Sign</thingDef>
+        <rotationByFacing><li>0</li><li>-45</li><li>0</li><li>45</li></rotationByFacing>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_DamagedSign"]</xpath>
+      <value>
+        <thingDef>QE_DamagedSign</thingDef>
+        <rotationByFacing><li>0</li><li>-45</li><li>0</li><li>45</li></rotationByFacing>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Tunnel"]</xpath>
+      <value>
+        <thingDef>QE_Tunnel</thingDef>
+      </value>
+    </apply>
+  </Operation>
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>50</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs/IsoRim.ModelDef[defName="R3D_CQF_Casket"]</xpath>
+      <value>
+        <thingDef>CQF_CryptosleepCasket</thingDef>
+        <byGraphic><li><path>Things/Building/LootBox/CryptosleepCasket/CryptosleepCasket_Opened</path><model>Models/cqf_casket_open.obj</model></li></byGraphic>
+      </value>
+    </apply>
+  </Operation>
+</Patch>

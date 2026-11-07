@@ -13,6 +13,7 @@ namespace IsoRimCQFPack
     // made from such a def gets that layout (Planner, through ProjectZ's floor plan), whatever the game's floor count; CQF's own
     // placement then runs at the full size from the origin (Placement), so its rows land on the floors. Everything else of CQF
     // is left alone: a def without the tag goes through untouched. Uses that can't keep floors are refused (Guards).
+    // The 3D models are a part of their own (Models, needs IsoRim Api 50).
     [StaticConstructorOnStartup]
     public static class Pack
     {
@@ -21,6 +22,7 @@ namespace IsoRimCQFPack
 
         static Pack()
         {
+            Models.Run();   // its own gate: on any IsoRimZ
             try
             {
                 if (Api.Version < NeededApi)

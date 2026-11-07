@@ -6,7 +6,9 @@
 - Its quest site comes out as it was made, in any game, whatever that game's floor count
 - Colonists walk in by the enter spot and up the stairs; enemies upstairs come down
 - Reopening a saved map in the CQF editor keeps its floors
+- Ladders saved on the map come back linked
 - Maps saved without floors behave as they do without this pack
+- CQF's chests, crates, stairs, cages and other furniture in 3D, opened states included
 
 A map with floors can only be a quest site or a main map. As a pocket map, map part, settlement, outpost or scenario start it is refused with a short warning.
 
@@ -18,7 +20,9 @@ Requires IsoRimZ and Custom Quest Framework. Load after them.
 - 任务地点按原样生成，不受当前存档楼层数影响
 - 小人从进入点进来、走楼梯上楼，楼上的敌人也会下楼
 - 在 CQF 编辑器里重新打开已保存的地图，楼层不丢
+- 地图上保存的梯子生成后仍可使用
 - 没有楼层的地图和不装本包时完全一样
+- CQF 的宝箱、木箱、楼梯、笼子等家具有 3D 模型，打开状态也是
 
 有楼层的地图只能用作任务地点或主地图。用作子地图、地图片段、据点、前哨或开局地图时会被拒绝，并给出简短警告。
 

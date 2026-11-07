@@ -1,0 +1,19 @@
+newmtl b8_ship_light
+Kd 0.72 0.72 0.73
+map_Kd IsoRim/Swatches/Metal
+newmtl b8_ship
+Kd 0.58 0.58 0.59
+map_Kd IsoRim/Swatches/Metal
+newmtl b8_ship_mid
+Kd 0.46 0.46 0.47
+map_Kd IsoRim/Swatches/Metal
+newmtl b8_ship_dark
+Kd 0.35 0.35 0.36
+map_Kd IsoRim/Swatches/Metal
+newmtl b8_ship_deep
+Kd 0.17 0.17 0.18
+newmtl b8_ship_amber
+Kd 0.70 0.60 0.40
+map_Kd IsoRim/Swatches/Metal
+newmtl b8_glass
+Kd 0.08 0.08 0.07

@@ -1,0 +1,105 @@
+# IsoRim Waylith - Custom Quest Framework Pack, batch B1: greys sampled from CQF's textures. stuff_cqf_*: tinted by the thing's stuff.
+newmtl cqf_bk_blue
+Kd 0.340 0.800 0.880
+newmtl cqf_bk_green
+Kd 0.300 0.780 0.450
+newmtl cqf_bk_red
+Kd 0.900 0.270 0.270
+newmtl cqf_bk_tan
+Kd 0.830 0.700 0.520
+newmtl cqf_bk_white
+Kd 0.850 0.850 0.850
+newmtl cqf_black
+Kd 0.015 0.015 0.015
+newmtl cqf_cs_amber
+Kd 0.700 0.600 0.400
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_dark
+Kd 0.350 0.350 0.360
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_deep
+Kd 0.170 0.170 0.180
+newmtl cqf_cs_glass
+Kd 0.080 0.080 0.070
+newmtl cqf_cs_leaf
+Kd 0.650 0.650 0.660
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_light
+Kd 0.720 0.720 0.730
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_mid
+Kd 0.460 0.460 0.470
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_pad
+Kd 0.510 0.510 0.520
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_cs_ship
+Kd 0.580 0.580 0.590
+map_Kd IsoRim/Swatches/Metal
+newmtl cqf_tn_floor
+Kd 0.020 0.110 0.030
+newmtl cqf_tn_grey
+Kd 0.460 0.470 0.420
+newmtl cqf_tn_pink
+Kd 0.450 0.330 0.360
+newmtl cqf_tn_rock
+Kd 0.450 0.390 0.340
+newmtl cqf_tn_rockd
+Kd 0.340 0.290 0.250
+newmtl stuff_cqf_b1
+Kd 0.390 0.360 0.290
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_b2
+Kd 0.270 0.240 0.180
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_b3
+Kd 0.170 0.150 0.120
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_b4
+Kd 0.060 0.050 0.050
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_d
+Kd 0.460 0.460 0.460
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_d5
+Kd 0.520 0.520 0.520
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_g
+Kd 0.600 0.600 0.600
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_k
+Kd 0.280 0.280 0.280
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_l
+Kd 0.880 0.880 0.880
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_m
+Kd 0.740 0.740 0.740
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_r
+Kd 0.410 0.410 0.410
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s1
+Kd 0.580 0.580 0.580
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s2
+Kd 0.500 0.500 0.500
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s3
+Kd 0.410 0.410 0.410
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s4
+Kd 0.330 0.330 0.330
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s5
+Kd 0.240 0.240 0.240
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s6
+Kd 0.140 0.140 0.140
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_s7
+Kd 0.060 0.060 0.060
+map_Kd IsoRim/Swatches/{stuff}
+newmtl stuff_cqf_w
+Kd 0.960 0.960 0.960
+map_Kd IsoRim/Swatches/{stuff}

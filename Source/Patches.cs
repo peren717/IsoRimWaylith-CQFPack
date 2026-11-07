@@ -57,13 +57,14 @@ namespace IsoRimCQFPack
         {
             try
             {
-                __instance.tags.RemoveAll(Marker.IsMarker);
+                __instance.tags.RemoveAll(t => Marker.IsMarker(t) || Ladders.IsTag(t));
                 if (map == null || !Api.HasFloors(map))
                 {
                     return;
                 }
                 int floors = Api.FloorCount(map);
                 __instance.tags.Add(Marker.Format(new Layout { floors = floors, groundX = map.Size.x, groundZ = Api.GroundRect(map).Height, stride = map.Size.z / floors }));
+                Ladders.Record(__instance, map);
                 Guards.CheckSource(map);
             }
             catch (Exception e)
@@ -100,7 +101,7 @@ namespace IsoRimCQFPack
         {
             try
             {
-                __instance.tags.RemoveAll(Marker.IsMarker);
+                __instance.tags.RemoveAll(t => Marker.IsMarker(t) || Ladders.IsTag(t));
                 if (map != null && Api.HasFloors(map) && Guards.PartLosesFloors(map, poss))
                 {
                     Guards.Warn(__instance, "PartLosesFloors", "the part keeps no floors");
@@ -220,6 +221,17 @@ namespace IsoRimCQFPack
         {
             if (__state.open)
             {
+                try
+                {
+                    if (__exception == null)
+                    {
+                        Ladders.Restore(__state.def, map);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Log.Warning(Pack.Tag + "ladders: " + e);
+                }
                 try
                 {
                     PutWellRoofs(map, __state.def, __state, __exception == null);
