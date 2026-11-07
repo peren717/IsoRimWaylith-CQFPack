@@ -14,7 +14,7 @@ namespace IsoRimCQFPack
     // loses that one (with a warning), the rest and CQF itself go on.
     internal static class Patches
     {
-        internal const int Count = 7;
+        internal const int Count = 6;
 
         internal static int Apply(Harmony h)
         {
@@ -25,7 +25,7 @@ namespace IsoRimCQFPack
             n += One(h, "main site", typeof(GenStep_MainMap), "GetMainSiteMap", null, prefix: nameof(MainLookup.Prefix), owner: typeof(MainLookup));
             n += One(h, "entrance", typeof(CustomMapEntrance), "GenerateCustomMap", null, prefix: nameof(Entrance.Prefix), owner: typeof(Entrance));
             n += One(h, "submap", typeof(CustomMapDataDef), "GenerateAsSubmap", null, prefix: nameof(Submap.Prefix), owner: typeof(Submap));
-            return n + 1;   // (the planner: an Api call, not a patch)
+            return n;
         }
 
         private static int One(Harmony h, string what, Type type, string name, Type[] args, Type owner, string prefix = null, string postfix = null, string finalizer = null)
