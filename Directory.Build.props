@@ -1,0 +1,13 @@
+<Project>
+  <!-- Build paths for every project of this repo, in one place. Each can be set with -p:<Name>=<path> (e.g.
+       -p:ProjectZDll=<a worktree's IsoRimProjectZ.dll>). The defaults derive from RimDir, the game folder whose Mods folder
+       holds this repo, so a worktree beside it builds unchanged. -->
+  <PropertyGroup>
+    <RimDir Condition="'$(RimDir)' == ''">$(MSBuildThisFileDirectory)..\..</RimDir>
+    <WorkshopDir Condition="'$(WorkshopDir)' == ''">$(RimDir)\..\..\workshop\content\294100</WorkshopDir>
+    <HarmonyDll Condition="'$(HarmonyDll)' == ''">$(WorkshopDir)\2009463077\1.7\Assemblies\0Harmony.dll</HarmonyDll>
+    <ProjectZDll Condition="'$(ProjectZDll)' == ''">$(RimDir)\Mods\IsoRimProjectZ\1.7\Assemblies\IsoRimProjectZ.dll</ProjectZDll>
+    <IsoRimDll Condition="'$(IsoRimDll)' == ''">$(RimDir)\Mods\IsoRim17\1.7\Assemblies\IsoRim.dll</IsoRimDll>
+    <CQFDll Condition="'$(CQFDll)' == ''">$(WorkshopDir)\2978572782\1.7\Assemblies\net10.0\QuestEditor_Library.dll</CQFDll>
+  </PropertyGroup>
+</Project>

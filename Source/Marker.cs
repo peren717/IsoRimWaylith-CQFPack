@@ -13,8 +13,24 @@ namespace IsoRimCQFPack
 
         // Does the def's data still have this layout, and is it one ProjectZ lays out the same way today?
         public bool FitsDef(CustomMapDataDef def) =>
-            floors >= 2 && floors <= ProjectZSettings.MaxFloors && groundX > 0 && groundZ > 0 && stride == ProjectZ.ProjectZ.StrideFor(groundZ)
+            floors >= 2 && floors <= NewMaps.MaxFloors && groundX > 0 && groundZ > 0 && stride == NewMaps.StrideFor(groundZ)
             && def.size.x == groundX && def.size.z == floors * stride;
+    }
+
+    // ProjectZ's layout of a new map, asked of ProjectZ each time: Api 11 (MaxFloors, StrideFor). Fallback for ProjectZ older
+    // than Api 11: the same values from ProjectZ's own members, read as before (MaxFloors is then the number compiled into
+    // the pack).
+    internal static class NewMaps
+    {
+        internal static int MaxFloors => Api.Version >= 11 ? MaxFloorsApi11() : ProjectZSettings.MaxFloors;
+
+        internal static int StrideFor(int groundRows) => Api.Version >= 11 ? StrideForApi11(groundRows) : ProjectZ.ProjectZ.StrideFor(groundRows);
+
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+        private static int MaxFloorsApi11() => Api.MaxFloors;
+
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+        private static int StrideForApi11(int groundRows) => Api.StrideFor(groundRows);
     }
 
     // The def's tag "IsoRimZ.floors=2.ground=100x100.stride=102". CQF compares tags by equality only (QuestNode_RandomCustomMap,

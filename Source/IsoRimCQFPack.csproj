@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <!-- IsoRimProjectZ.dll is IsoRimZ's (public Api, Api 9+); override with -p:IsoRimZDll=<path> to build against a worktree.
-       QuestEditor_Library.dll is Custom Quest Framework's, referenced in place and never copied. -->
+  <!-- IsoRimProjectZ.dll is IsoRimZ's (public Api, Api 9+; Api 11 members behind a version check).
+       QuestEditor_Library.dll is Custom Quest Framework's, referenced in place and never copied.
+       Build paths (overridable): the repo root's Directory.Build.props. -->
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
@@ -14,10 +15,6 @@
     <DebugType>none</DebugType>
     <GenerateDependencyFile>false</GenerateDependencyFile>
     <Optimize>true</Optimize>
-    <RimDir Condition="'$(RimDir)' == ''">..\..\..</RimDir>
-    <IsoRimZDll Condition="'$(IsoRimZDll)' == ''">..\..\IsoRimProjectZ\1.7\Assemblies\IsoRimProjectZ.dll</IsoRimZDll>
-    <IsoRimDll Condition="'$(IsoRimDll)' == ''">..\..\IsoRim17\1.7\Assemblies\IsoRim.dll</IsoRimDll>
-    <WS>$(RimDir)\..\..\workshop\content\294100</WS>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="obj\**;bin\**" />
@@ -26,9 +23,9 @@
     <Reference Include="Assembly-CSharp"><HintPath>$(RimDir)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="UnityStubs"><HintPath>$(RimDir)\UnityStubs.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Waylith"><HintPath>$(RimDir)\Waylith.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="0Harmony"><HintPath>$(WS)\2009463077\1.7\Assemblies\0Harmony.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="QuestEditor_Library"><HintPath>$(WS)\2978572782\1.7\Assemblies\net10.0\QuestEditor_Library.dll</HintPath><Private>false</Private></Reference>
-    <Reference Include="IsoRimProjectZ"><HintPath>$(IsoRimZDll)</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyDll)</HintPath><Private>false</Private></Reference>
+    <Reference Include="QuestEditor_Library"><HintPath>$(CQFDll)</HintPath><Private>false</Private></Reference>
+    <Reference Include="IsoRimProjectZ"><HintPath>$(ProjectZDll)</HintPath><Private>false</Private></Reference>
     <Reference Include="IsoRim"><HintPath>$(IsoRimDll)</HintPath><Private>false</Private></Reference>
   </ItemGroup>
 </Project>
