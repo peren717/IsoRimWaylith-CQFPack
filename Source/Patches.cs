@@ -62,8 +62,8 @@ namespace IsoRimCQFPack
                 {
                     return;
                 }
-                int floors = Api.FloorCount(map);
-                __instance.tags.Add(Marker.Format(new Layout { floors = floors, groundX = map.Size.x, groundZ = Api.GroundRect(map).Height, stride = map.Size.z / floors }));
+                CellRect ground = Api.GroundRect(map);
+                __instance.tags.Add(Marker.Format(new Layout { floors = Api.FloorCount(map), groundX = ground.Width, groundZ = ground.Height, stride = Stride(map) }));
                 Ladders.Record(__instance, map);
                 Guards.CheckSource(map);
             }
@@ -72,6 +72,12 @@ namespace IsoRimCQFPack
                 Log.Warning(Pack.Tag + "stamp: " + e);
             }
         }
+
+        // Rows from one floor's band to the next, as ProjectZ lays them out.
+        private static int Stride(Map map) => Api.Version >= 10 ? StrideApi10(map) : map.Size.z / Api.FloorCount(map);   // (fallback for ProjectZ older than Api 10: its layout, FloorCount bands of equal rows)
+
+        [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+        private static int StrideApi10(Map map) => Api.FloorStride(map);
     }
 
     // CustomMapDataDef.LoadData(map, cells, size): a part of a map. A part has no floors: its cells are laid out flat, so cells
